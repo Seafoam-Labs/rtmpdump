@@ -35,10 +35,11 @@ fatal: remote error: upload-pack: not our ref 0000000000000000000000000000000000
 Arch's own recipe still names that URL, and it built `1:2.6-2` on 2026-05-01,
 so this is a regression on the hosting side rather than a packaging problem.
 `git.ffmpeg.org` offers no tarball snapshot either; its gitweb snapshot URLs
-return `text/html`. The GitHub mirrors that advertise `git.ffmpeg.org/rtmpdump`
-(`mirror/rtmpdump`, `Distrotech/rtmpdump`, `mstorsjo/rtmpdump`, `lu-zero/rtmpdump`
-and others) were checked individually and none of them contains the commit Arch
-pins, so none of them is a usable substitute.
+return `text/html`. Four GitHub mirrors that advertise
+`git.ffmpeg.org/rtmpdump` (`mirror/rtmpdump`, `Distrotech/rtmpdump`,
+`mstorsjo/rtmpdump` and `lu-zero/rtmpdump`) were cloned and checked for the
+object, and none of them contains the commit Arch pins, so none of them is a
+usable substitute.
 
 ## Current source snapshot
 
